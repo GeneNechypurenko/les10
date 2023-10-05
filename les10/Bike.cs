@@ -6,32 +6,32 @@ using System.Threading.Tasks;
 
 namespace les10
 {
-    internal class Car : Vehicle, IDrivable
+    internal class Bike : Vehicle, IDrivable
     {
-        public Car() { FuelLevel = 100; Speed = 0; }
+        public Bike() { FuelLevel = 100; Speed = 0; }
         public void Accelerate()
         {
-            Console.WriteLine("Car using acceleration... top speed increasing"); ;
+            Console.WriteLine("Bike using acceleration... top speed increasing"); ;
         }
 
         public void Break()
         {
-            Console.WriteLine("Car using breaks... top speed decreasing");
+            Console.WriteLine("Bike using breaks... top speed decreasing");
         }
 
         public override void Start()
         {
-            Console.WriteLine("Car begin to move...");
+            Console.WriteLine("Bike begin to move...");
         }
 
         public override void Stop()
         {
-            Console.WriteLine("Car stoped...");
+            Console.WriteLine("Bike stoped...");
         }
 
         public void Turn()
         {
-            Console.WriteLine("Car turns...");
+            Console.WriteLine("Bike turns...");
         }
     }
 }
