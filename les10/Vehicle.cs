@@ -34,5 +34,10 @@ namespace les10
         }
         public abstract void Start();
         public abstract void Stop();
+
+        public static implicit operator Vehicle(List<Vehicle> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
